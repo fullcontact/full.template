@@ -2,7 +2,9 @@
   (:require [leiningen.new.templates :refer [renderer name-to-path ->files]]
             [leiningen.core.main :as main]))
 
+
 (def render (renderer "full-template"))
+
 
 (defn full-template
   "Generates new full.template project"
