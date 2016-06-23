@@ -12,7 +12,7 @@
   (let [data {:name name
               :capitalized (clojure.string/capitalize name)
               :sanitized (name-to-path name)}]
-    (main/info "Generating fresh 'lein new' full.template project.")
+    (main/info "Generating fresh full.template project.")
     (->files data
       ["src/{{sanitized}}/api.clj" (render "api.clj" data)]
       ["project.clj" (render "project.clj" data)]
