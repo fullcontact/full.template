@@ -13,4 +13,9 @@ Example project defines 2 endpoints. You can run the server with:
 lein run
 ```
 
-The server will run on [localhost:8080](http://localhost:8080)
+The server will run on [localhost:8080](http://localhost:8080).  There's a
+dummy unittest test (with midje) & tests can be run with
+
+```
+lein midje
+```

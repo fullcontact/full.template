@@ -1,6 +1,6 @@
 (ns {{ name }}.t-api
-  (:require [[midje.sweet :refer :all]
-             [{{ name }}.api :refer :all]]))
+  (:require [midje.sweet :refer :all]
+            [{{ name }}.api :refer :all]))
 
 
 (facts "Name formatting"
