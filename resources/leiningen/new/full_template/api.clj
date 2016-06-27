@@ -12,12 +12,16 @@
 (def request-logger (org.slf4j.LoggerFactory/getLogger "{{ name }}.request"))
 
 
+(defn format-name [n]
+  (str "Hello, " n))
+
+
 (serv/defroutes app-routes
-  (serv/GET "/public" _
-    {:status 200 :body {:message "Hello"}})
+  (serv/GET "/" _
+    {:status 200 :body {:message "Hello."}})
 
   (serv/GET "/hello/:username" {:keys [headers params]}
-    {:status 200 :body {:message (str "Hello, " (:username params))}})
+    {:status 200 :body {:message (format-name (:username params))}})
 
   (serv/ANY "*" _ {:status 404 :body {:message "Four-oh-Four"}}))
 

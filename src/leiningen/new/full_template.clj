@@ -15,6 +15,7 @@
     (main/info "Generating fresh full.template project.")
     (->files data
       ["src/{{sanitized}}/api.clj" (render "api.clj" data)]
+      ["test/{{sanitized}}/t_api.clj" (render "t_api.clj" data)]
       ["project.clj" (render "project.clj" data)]
       ["README.md" (render "README.md" data)]
 
