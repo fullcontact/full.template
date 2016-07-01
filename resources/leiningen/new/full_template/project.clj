@@ -1,6 +1,6 @@
 (defproject fullcontact/{{ name }} "latest"
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [fullcontact/full.bootstrap "0.10.1"]]
+                 [fullcontact/full.bootstrap "0.10.2"]]
   :main {{ name }}.api
   :resource-paths ["resources"]
   :target-path "target/%s"
