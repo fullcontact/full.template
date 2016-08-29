@@ -18,6 +18,7 @@
       ["test/{{sanitized}}/t_api.clj" (render "t_api.clj" data)]
       ["project.clj" (render "project.clj" data)]
       ["README.md" (render "README.md" data)]
+      ["dev/user.clj" (render "user.clj" data)]
 
       ; Config
       ["dev.yaml" (render "dev.yaml" data)]
