@@ -1,4 +1,4 @@
-(defproject full-template/lein-template "0.2.4-SNAPSHOT"
+(defproject full-template/lein-template "0.2.4"
   :description "Template for a full.monty HTTP project"
   :url "http://github.com/fullcontact/full.template"
   :license {:name "Eclipse Public License"
