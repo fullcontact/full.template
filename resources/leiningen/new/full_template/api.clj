@@ -28,5 +28,6 @@
   (log/configure)
   (start-nstracker)
   (serv/run-server (serv/json-api #'app-routes :logger request-logger)
-                   {:port @port})
+                   {:port @port
+                    :max-line 8192})
   (println "{{ name }} running on" @port))
